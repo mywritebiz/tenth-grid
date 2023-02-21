@@ -11,8 +11,8 @@ main {
 }
 .container {  
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 24px 24px;
     grid-auto-flow: row;
     width: 100%;
@@ -20,7 +20,10 @@ main {
     margin-right: 2.3%;
     margin-left: 2.3%;
 }
-
+/* can use repeat instead of: 
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+*/
 .div1 {
     grid-row: 1/4;
     grid-column: 1/3;
